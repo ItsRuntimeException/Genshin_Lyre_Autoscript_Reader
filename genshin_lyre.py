@@ -18,24 +18,35 @@ def release(note):
     note = note.lower()
     win32api.keybd_event(letter[note], 0, win32con.KEYEVENTF_KEYUP, 0)
 
-def play_lyre(filename, key_text):
+def play_lyre():
+    # read file
+    folder_name='songscript/'
+    filename = str(input("filename:"))
+    fileObject = open(folder_name+filename, 'r')
+    key_text = list(fileObject.read())
+    # delay start
     stime = int(input("Sleep time(seconds):"))
     print("Play will start in " + str(stime) + " seconds")
     time.sleep(stime) 
     print('Playing:', filename)
     for i in range(len(key_text)):
         if key_text[i] == normal_pause:
-            time.sleep(1.0)
+            time.sleep(0.8)
         elif key_text[i] == quick_pause:
             time.sleep(0.4)
-        elif key_text[i] == dash:
+        elif key_text[i] == normal_dash:
             time.sleep(0.2)
+        elif key_text[i] == quick_dash:
+            time.sleep(0.1)
         elif key_text[i] == new_line:
             time.sleep(0.0)
         else:
             press(key_text[i])
             release(key_text[i])
     print('Finished playing.')
+    playnext = str(input("Continue?:y/n"))
+    if playnext == 'y':
+        play_lyre()
 
 def is_admin():
 	try:
@@ -50,15 +61,10 @@ else:
 
 # delay types
 new_line = '\n'         # 0.0 sec (just to make it look nice)
-normal_pause = ' '      # 1.0 sec
+normal_pause = ' '      # 0.8 sec (normal)
 quick_pause = '>'       # 0.4 sec (slow tempo)
-dash = '-'              # 0.2 sec (quick tap)
-	
-# read file
-folder_name='songscript/'
-filename = str(input("filename:"))
-fileObject = open(folder_name+filename, 'r')
-data = list(fileObject.read())
+normal_dash = '-'       # 0.2 sec (quick tap)
+quick_dash = '.'        # 0.1 sec (extra quick tap)
 
 # auto-play
-play_lyre(filename, data)
+play_lyre()

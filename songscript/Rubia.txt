@@ -1,12 +1,11 @@
-AC D DV>S-S SB>M-B>F->FZ>D-D >
-AN G GV>F-F S-SB>M-B->S-A-Z >
-QC E E-EV>W-W->WB>J-G>R->RZ>E-E >
-QN T TV>R-R WB>J-G>W-Q-Z>A>D>G>JV>A>F>Q-Q->A>D>G>JN>D>G>Q-Q >
-G>GX>F>HV>G-G-C>D>JB>Q>V>W>EN>W-W-B   
+AC D DV>S-S SB>M-B->F.>FZ>D-D ->
+AN G GV>F-F S-SB>M-B.>S-A-Z ->
+QC E E-EV>W-W WB>J-G->R.>RZ>E-E ->
+QN T TV>R-R WB>J-G.>W-Q-Z>A>D>G>JV>A>F>Q-Q->A>D>G>JN>D>G>Q-Q ->
+G>GX>F>HV>G-G-C>D>JB>Q>V>W>EN>W-W-B ->
 
 
-
-QZ E EV W-W WM J-G R RC E-E-X
-QZ T TV R-R W-WB J-G W-Q Z
-AN D D-DV S-S SB M-B F F-FZ G-D S
-AN G G-GV F-F S-SB M-B S-A-Zqz
+QZ E EV>W-W WM>J-G->R.>RC>E-E-X 
+QZ T TV>R-R W-WB>J-G.>W-Q-Z ->
+AN D D-DV>S-S SB>M-B->F.>F-FZ>G-D.>S>
+AN G G-GV>F-F S-SB>M-B.>S-A-Z 
