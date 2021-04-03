@@ -12,7 +12,7 @@ letter = {'a': 65, 'b': 66, 'c': 67, 'd': 68, 'e': 69, 'f': 70, 'g': 71, 'h': 72
 def press(note):
     note = note.lower()
     win32api.keybd_event(letter[note], 0, 0, 0)
-    print("Press: ", letter[note])
+    print("Press: ", note)
 
 def release(note):
     note = note.lower()
@@ -25,13 +25,13 @@ def play_lyre(filename, key_text):
     print('Playing:', filename)
     for i in range(len(key_text)):
         if key_text[i] == normal_pause:
-            time.sleep(1)
+            time.sleep(1.0)
         elif key_text[i] == quick_pause:
-            time.sleep(0.5)
+            time.sleep(0.4)
         elif key_text[i] == dash:
             time.sleep(0.2)
         elif key_text[i] == new_line:
-            time.sleep(1.2)
+            time.sleep(0.0)
         else:
             press(key_text[i])
             release(key_text[i])
@@ -49,14 +49,15 @@ else:
 	exit(0)
 
 # delay types
-new_line = '\n'         # 1.0 sec
+new_line = '\n'         # 0.0 sec (just to make it look nice)
 normal_pause = ' '      # 1.0 sec
-quick_pause = '>'       # 0.5 sec 
-dash = '-'              # 0.2 sec
+quick_pause = '>'       # 0.4 sec (slow tempo)
+dash = '-'              # 0.2 sec (quick tap)
 	
 # read file
+folder_name='songscript/'
 filename = str(input("filename:"))
-fileObject = open(filename, 'r')
+fileObject = open(folder_name+filename, 'r')
 data = list(fileObject.read())
 
 # auto-play
