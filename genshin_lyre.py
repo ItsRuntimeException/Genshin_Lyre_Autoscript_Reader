@@ -6,7 +6,6 @@ import win32con
 import win32gui
 import threading
 import time
-import argparse
 
 letter = {'a': 65, 'b': 66, 'c': 67, 'd': 68, 'e': 69, 'f': 70, 'g': 71, 'h': 72, 'i': 73, 'j': 74, 'k': 75, 'l': 76, 'm': 77, 'n': 78, 'o': 79, 'p': 80, 'q': 81, 'r': 82, 's': 83, 't': 84, 'u': 85, 'v': 86, 'w': 87, 'x': 88, 'y': 89, 'z': 90}
 
@@ -43,7 +42,6 @@ def is_admin():
 		return ctypes.windll.shell32.IsUserAnAdmin()
 	except:
 		return False
-
 if is_admin():
 	pass
 else:
@@ -51,11 +49,11 @@ else:
 	exit(0)
 
 # delay types
-new_line = '\n'         # 1.2 sec
+new_line = '\n'         # 1.0 sec
 normal_pause = ' '      # 1.0 sec
 quick_pause = '>'       # 0.5 sec 
 dash = '-'              # 0.2 sec
-
+	
 # read file
 filename = str(input("filename:"))
 fileObject = open(filename, 'r')
