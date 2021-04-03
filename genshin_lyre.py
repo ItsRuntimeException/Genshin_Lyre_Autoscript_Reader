@@ -93,7 +93,7 @@ def play_lyre():
         elif playnext == 'n':
             exit(0)
 
-def main()
+def main():
     # this will make or break the ability for the keypress to register in the game
     if is_admin():
 	    pass
