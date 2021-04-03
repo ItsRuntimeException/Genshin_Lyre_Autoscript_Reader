@@ -4,6 +4,7 @@ This uses keyboard annotations in a .txt file instead of using midi conversion.
 
 Rubia.txt is from 'Animuz - Anime Piano' on youtube, check his/her channel out!
 
-My timing on the Rubia.txt may not be accurate, it is up to you to tinker with it!
+My timing on the Rubia.txt may not be the most accurate, it is up to you to tinker with it!
 
 ^.^
+Enjoy!
