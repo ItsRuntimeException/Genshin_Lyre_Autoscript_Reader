@@ -6,5 +6,7 @@ Rubia.txt is from 'Animuz - Anime Piano' on youtube, check his/her channel out!
 
 My timing on the Rubia.txt may not be the most accurate, it is up to you to tinker with it!
 
+Here's a demo: https://www.youtube.com/watch?v=RGQMdLCpFK4
+
 ^.^
 Enjoy!
