@@ -19,6 +19,13 @@ letter = {'a': 65, 'b': 66, 'c': 67,
           'y': 89, 'z': 90
         }
 
+# delay types
+new_line = '\n'         # 0.0 sec (just to make it look nice)
+normal_pause = ' '      # 0.8 sec (slow tempo)
+quick_pause = '>'       # 0.4 sec (normal tempo)
+normal_dash = '-'       # 0.2 sec (normal quick tap)
+quick_dash = '.'        # 0.1 sec (extra quick tap)
+
 # this will make or break the ability for the keypress to register in the game
 def is_admin():
 	try:
@@ -46,13 +53,6 @@ def press(note):
 def release(note):
     note = note.lower()
     win32api.keybd_event(letter[note], 0, win32con.KEYEVENTF_KEYUP, 0)
-
-# delay types
-new_line = '\n'         # 0.0 sec (just to make it look nice)
-normal_pause = ' '      # 0.8 sec (normal)
-quick_pause = '>'       # 0.4 sec (slow tempo)
-normal_dash = '-'       # 0.2 sec (quick tap)
-quick_dash = '.'        # 0.1 sec (extra quick tap)
 
 # auto_play function
 def play_lyre():
@@ -85,13 +85,13 @@ def play_lyre():
     print('Finished playing:', os.path.splitext(song_name)[0])
     # play continue?
     playnext = str(input("Continue? (y/n): ")).lower()
-    while playnext != 'y' or playnext != 'n':
+    while playnext != 'y' and playnext != 'n':
         print('Please enter a valid response!')
         playnext = str(input("Continue? (y/n): ")).lower()
-        if playnext == 'y':
-            play_lyre()
-        elif playnext == 'n':
-            exit(0)
+    if playnext == 'y':
+        play_lyre()
+    elif playnext == 'n':
+        exit(0)
 
 def main():
     # this will make or break the ability for the keypress to register in the game
