@@ -1,4 +1,3 @@
-from __future__ import print_function
 import ctypes, sys
 import os
 import time
@@ -13,12 +12,12 @@ letter = {'a': 65, 'b': 66, 'c': 67, 'd': 68, 'e': 69, 'f': 70, 'g': 71, 'h': 72
 
 def press(note):
     note = note.lower()
-    win32api.keybd_event(letter[mapping[note]], 0, 0, 0)
-    print("Press: ", letter[mapping[note]])
+    win32api.keybd_event(letter[note], 0, 0, 0)
+    print("Press: ", letter[note])
 
 def release(note):
     note = note.lower()
-    win32api.keybd_event(letter[mapping[note]], 0, win32con.KEYEVENTF_KEYUP, 0)
+    win32api.keybd_event(letter[note], 0, win32con.KEYEVENTF_KEYUP, 0)
 
 def play_lyre(filename, key_text):
     stime = int(input("Sleep time(seconds):"))
@@ -61,9 +60,6 @@ dash = '-'              # 0.2 sec
 filename = str(input("filename:"))
 fileObject = open(filename, 'r')
 data = list(fileObject.read())
-
-# debug display
-# print(args.textfile, '\n\nRAW:\n', data)
 
 # auto-play
 play_lyre(filename, data)
