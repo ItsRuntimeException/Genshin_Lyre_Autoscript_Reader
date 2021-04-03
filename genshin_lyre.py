@@ -29,18 +29,18 @@ def is_admin():
 # helper function 1
 def read_directory(directory):
     script_list = os.listdir(directory)
+    print('\n')
     for count in range(0, len(script_list)):
         print(str(count) + "：" + script_list[count])
-    #filename = str(input("filename:"))
-    filename = script_list[int(input('Please enter the song number: '))]
-    fileObject = open(directory + filename, 'r')
-    return list(fileObject.read())
+    filename = script_list[int(input('\nPlease enter the song number: '))]
+    fileObject = open(directory+filename, 'r')
+    return list(fileObject.read()), filename
 
 # helper function 2
 def press(note):
     note = note.lower()
     win32api.keybd_event(letter[note], 0, 0, 0)
-    print("Press: ", note)
+    print("Press:", note)
 
 # helper function 3
 def release(note):
@@ -57,16 +57,16 @@ quick_dash = '.'        # 0.1 sec (extra quick tap)
 # auto_play function
 def play_lyre():
     # read file as list
-    data = read_directory('./songscript/')
+    data, song_name = read_directory('songscript/')
     # delay start
-    buffer_time = int(input("Buffer time(seconds):"))
+    buffer_time = int(input("Buffer time(seconds): "))
     print("Play will start in...")
     time.sleep(0.5)
     while buffer_time > 0:
         print(buffer_time)
         time.sleep(1)
         buffer_time -= 1
-    print('Playing:', filename)
+    print('Playing:', os.path.splitext(song_name)[0])
     # play logic
     for i in range(len(data)):
         if data[i] == normal_pause:
@@ -82,7 +82,7 @@ def play_lyre():
         else:
             press(data[i])
             release(data[i])
-    print('Finished playing.')
+    print('Finished playing:', os.path.splitext(song_name)[0])
     # play continue?
     playnext = str(input("Continue? (y/n): ")).lower()
     while playnext != 'y' or playnext != 'n':
