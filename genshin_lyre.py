@@ -45,7 +45,7 @@ def play_lyre():
             release(key_text[i])
     print('Finished playing.')
     playnext = str(input("Continue? (y/n): ")).lower()
-    while playnext != 'y' || playnext != 'n':
+    while playnext != 'y' or playnext != 'n':
         print('Please enter a valid response!')
         playnext = str(input("Continue? (y/n): ")).lower()
         if playnext == 'y':
