@@ -2,8 +2,8 @@ Make sure these below is installed.
 
 Install python.
 
-Then click install_dep.bat
+Then run install_dep.bat as administrator
 or
 in cmd:
-pip install pywin32
-pip install numpy
+pip install pywin32 --user
+pip install numpy --user
