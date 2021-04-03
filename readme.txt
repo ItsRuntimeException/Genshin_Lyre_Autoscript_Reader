@@ -1,4 +1,5 @@
 Make sure these below is installed.
 
-Install python.
-Install pywin32.
+Install python, then on cmd:
+pip install pywin32
+pip install numpy
