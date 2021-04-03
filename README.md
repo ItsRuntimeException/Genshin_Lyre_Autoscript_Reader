@@ -9,5 +9,4 @@ My timing on the Rubia.txt may not be accurate, it is up to you to tinker with i
 Here's a demo: https://www.youtube.com/watch?v=ApYD_uCLJF0
 
 ^.^
-
 Enjoy!
