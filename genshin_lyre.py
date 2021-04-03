@@ -44,9 +44,14 @@ def play_lyre():
             press(key_text[i])
             release(key_text[i])
     print('Finished playing.')
-    playnext = str(input("Continue?:y/n"))
-    if playnext == 'y':
-        play_lyre()
+    playnext = str(input("Continue? (y/n): ")).lower()
+    while playnext != 'y' || playnext != 'n':
+        print('Please enter a valid response!')
+        playnext = str(input("Continue? (y/n): ")).lower()
+        if playnext == 'y':
+            play_lyre()
+        elif playnext == 'n':
+            exit(0)
 
 def is_admin():
 	try:
