@@ -40,7 +40,7 @@ def read_directory(directory):
     script_list = os.listdir(directory)
     print('\n')
     for count in range(0, len(script_list)):
-        print(str(count) + "：" + script_list[count])
+        print(str(count) + ": " + script_list[count])
     filename = script_list[int(input('\nPlease enter the song number: '))]
     fileObject = open(directory+filename, 'r')
     return list(fileObject.read()), filename
