@@ -26,6 +26,7 @@ quick_pause = '>'       # 0.4 sec (normal tempo)
 normal_dash = '-'       # 0.2 sec (normal quick tap)
 quick_dash = '.'        # 0.1 sec (extra quick tap)
 curl_dash = '~'         # .05 sec (tap tap)
+star_dash = '*'         #.025 sec (tap tap tap)
 
 # this will make or break the ability for the keypress to register in the game
 def is_admin():
@@ -80,6 +81,8 @@ def play_lyre():
             time.sleep(0.1)
         elif data[i] == curl_dash:
             time.sleep(0.05)
+        elif data[i] == star_dash:
+            time.sleep(0.025)
         elif data[i] == new_line:
             time.sleep(0.0)
         else:
