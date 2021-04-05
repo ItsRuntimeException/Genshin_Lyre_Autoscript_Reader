@@ -1,4 +1,4 @@
-Make sure these below is installed.
+Make sure these below are installed.
 
 Install python.
 
