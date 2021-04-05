@@ -4,8 +4,6 @@ import time
 import win32api
 import win32con
 import win32gui
-import threading
-import time
 
 # key-value mapping
 letter = {'a': 65, 'b': 66, 'c': 67, 
