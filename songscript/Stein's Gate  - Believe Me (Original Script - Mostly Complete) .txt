@@ -1,31 +1,36 @@
-XVS N>>>>>
-S*-N*-S*-Z~D ~N>>>>>
-D*-N*-D*-X~F ~V.>
-F*-G*-F*-Z~D ~B.>
-D*-T*-R*-CG~E W Q.>ZD~J>>>>>
+XVS N  ~>
+S*-N*-S*-Z~D *N  ~>
+D*-N*-D*-X~F *V.>
+F*-G*-F*-Z~D *B.>
+D*-T*-R*-CG~E W Q.>ZD~J  ~>
 
 D*-F*-D*-
-XVS N>>>>>
-S*-N*-S*-B~D.>F*~-D*.>XN>>>>>
+XVS N  ~>
+S*-N*-S*-B~D.>F*~-D*.>N  ~>
 
-ZN*-D*-F*-VG*>>>
-H*-F*-VND*.->
-CA*.>S*-D*-XS>>>>>
+N*-D*-F*-VG ~>
+Z*-H*-F*-VND*.->
+CA*.>S*-D*-XS  .~>
 
-CNH*.->BG*.->AQ*.>NH*.->BG*.->
-D*-F*-ZBG*.->F.->Q*.>ZBD*.->XNF->>>
+NH*.->BG*.->AQ*.>XNH*.->BG*.>
+Z*-D*-F*-CBG*.->F.->Q*.>CBD*.->XNF ->
 NH*.->BG.>
 AQ.>BSW BDQ.>
-NDR*-E*-ZDH.>
+NDR*-E*-ZDH*.->
 
-N*-D*-F*-GT>>>
-Z*-S*-D*-HY>>>
+N*-D*-F*-G~T >
+Z*-S*-D*-H~Y  .~>
 
-NH*.->BG*.->AQ*.>NH*.->BG*.>
-A*-D*-F*-ZBG*.->F.->Q*.>ZBD*.->XNF->>>
-VNS.>D*-F.>G.>NH~>>>
-VNH*.>W*.>W.>>>
-E*.>G~Q~E~R
+NH*.->BG*.->AQ*.>XNH*.->BG*.>
+A*-D*-F*-CBG*.->F.->Q*.>CBD*.->XNF ->
+VNS.>D*-F.>G.>NH ~>
+VNH*.>W*.>W .>
+E*.>GQ~E  ~>
+
+SW H  ~>
+W*-H*-W*-A~E *H  ~>
+E*-H*-E*-S~R ->
+R*-T*-R*-A~E *D.->
+DQ.->W E  X.S.F.H.W 
 
 ...
-
